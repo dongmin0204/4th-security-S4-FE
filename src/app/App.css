@@ -1,16 +1,238 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+body {
+  min-height: 100vh;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
+
+.app-background {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-center-frame {
+  width: 400px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.status-bar {
+  width: 384px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.status-battery {
+  width: 20px;
+  height: 12px;
+  left: 348px;
+  top: 16.33px;
+  position: absolute;
+  opacity: 0.3;
+  border-radius: 4px;
+  border: 1px solid #222;
+}
+.status-signal1 {
+  width: 1.33px;
+  height: 4px;
+  left: 371px;
+  top: 20px;
+  position: absolute;
+  opacity: 0.4;
+  background: #222;
+}
+.status-signal2 {
+  width: 16px;
+  height: 8px;
+  left: 350px;
+  top: 18.33px;
+  position: absolute;
+  background: #222;
+  border-radius: 1.1px;
+}
+.status-signal3 {
+  width: 16px;
+  height: 10px;
+  left: 327.69px;
+  top: 16.33px;
+  position: absolute;
+  background: #222;
+}
+.status-signal4 {
+  width: 16px;
+  height: 10px;
+  left: 305.67px;
+  top: 16.67px;
+  position: absolute;
+  background: #222;
+}
+.status-time {
+  width: 56px;
+  height: 20px;
+  left: 18px;
+  top: 12px;
+  position: absolute;
+  text-align: center;
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'SF Pro Text', sans-serif;
+  line-height: 20px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  left: 26px;
+  top: 50px;
+  position: absolute;
+  background: #f87171;
+  border-radius: 9999px;
+  outline: 1.5px solid #000;
+}
+.logo-dot1 {
+  width: 2.55px;
+  height: 2.55px;
+  left: 53.23px;
+  top: 60.21px;
+  position: absolute;
+  background: #fde047;
+  border-radius: 9999px;
+  outline: 1.5px solid #222;
+}
+.logo-dot2 {
+  width: 2.55px;
+  height: 2.55px;
+  left: 36.21px;
+  top: 60.21px;
+  position: absolute;
+  background: #fde047;
+  border-radius: 9999px;
+  outline: 1.5px solid #222;
+}
+.logo-dot3 {
+  width: 2.55px;
+  height: 2.55px;
+  left: 44.72px;
+  top: 58.51px;
+  position: absolute;
+  background: #fde047;
+  outline: 1.5px solid #222;
+}
+.title {
+  width: 176px;
+  height: 24px;
+  left: 24px;
+  top: 61px;
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  line-height: 24px;
+  font-family: '머니그라피', sans-serif;
+}
+.title-rose {
+  color: #f87171;
+  font-weight: 400;
+}
+.title-black {
+  color: #222;
+  font-weight: 400;
+}
+.desc-box {
+  width: 100%;
+  height: 144px;
+  left: 0;
+  top: 109px;
+  position: absolute;
+  background: #f87171;
+  border-radius: 24px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-family: '머니그라피', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.top5-box {
+  width: 100%;
+  height: 320px;
+  left: 0;
+  top: 270px;
+  position: absolute;
+  background: #fca5a5;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #f87171;
+}
+.top5-title {
+  width: 256px;
+  height: 40px;
+  margin-top: 24px;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  font-family: '머니그라피', sans-serif;
+}
+.top5-list {
+  width: 256px;
+  height: 208px;
+  margin-top: 16px;
+  text-align: left;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Paperlogy', sans-serif;
+  line-height: 2.5;
+}
+.button-bg {
+  width: 160px;
+  height: 40px;
+  left: 117px;
+  top: 777px;
+  position: absolute;
+  background: #f87171;
+  border-radius: 24px;
+}
+.button-fg {
+  width: 160px;
+  height: 40px;
+  left: 115px;
+  top: 774px;
+  position: absolute;
+  background: #fee2e2;
+  border-radius: 24px;
+}
+.button-text {
+  left: 150px;
+  top: 785px;
+  position: absolute;
+  text-align: center;
+  color: #fca5a5;
+  font-size: 20px;
+  font-family: '머니그라피', sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
